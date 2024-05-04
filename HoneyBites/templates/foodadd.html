@@ -1,0 +1,29 @@
+{% extends "template.html" %}
+
+{% block style %}
+<style>
+    body, html {height: 100%}
+    body {
+    background-image: url("./static/assets/background.png");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 10%;
+    overflow: auto;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<br><br><br><br>
+<div class="foodaddbox w3-container w3-black w3-round-large">
+<form class="w3-container" action="/foodadd", method="POST">
+    <form action="#" method="POST">
+        <h2 class="w3-center">Add Food</h2>
+        <p class="w3-text-white">Food name:<input class="w3-input" type="text" name="food"/></p>
+        <p class="submitbutton w3-theme-d2"><input type="submit" value="Submit" class="w3-button w3-block w3-section"/></p>
+    </form>
+</form>
+
+{% endblock %}

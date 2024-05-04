@@ -1,0 +1,101 @@
+#loginbg {
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  top:12.5%;
+  left:0px;
+  z-index:1000;
+  background: url(https://static.vecteezy.com/system/resources/previews/006/541/497/non_2x/black-and-yellow-hazard-stripes-background-industrial-wallpaper-lines-and-diagonal-texture-police-line-or-danger-tapes-illustration-sign-symbol-and-icon-caution-or-constuction-concept-free-vector.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+/* #signupbox {
+  position:fixed;
+  opacity: 1;
+  width:50%;
+  height: 65%;
+  top:25%;
+  left:25%;
+  z-index:1000;
+  background: rgb(51, 51, 51);
+  border-radius: 35px;
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  overflow:scroll;
+} */
+
+#loginbox {
+  position:fixed;
+  opacity: 1;
+  width:50%;
+  height: 65%;
+  top:25%;
+  left:25%;
+  z-index:1000;
+  background: rgb(51, 51, 51);
+  border-radius: 35px;
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+}
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: rgb(201, 148, 13);
+  color: white;
+  padding: 14px 20px;
+  margin: px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(229, 168, 13);
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+p {
+  color: white;
+  font-weight: bold;
+}
+
+#TITLE {
+  color: white;
+  text-align: center;
+}
+/* #loginform {
+
+} */
+
+.navbar {
+  position:fixed;
+}
+
+#homebox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

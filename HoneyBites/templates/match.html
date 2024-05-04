@@ -1,0 +1,73 @@
+{% extends "template.html" %}
+
+{% block style %}
+<style>
+.matches{
+    overflow: hidden;
+}
+
+.row{
+    display: flex;
+  }
+  
+.column{
+    flex: 50%;
+  }
+
+body, html {height: 100%}
+body {
+    background-image: url("./static/assets/background.png");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 10%;
+    overflow: auto;
+    overflow: hidden;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+
+<br><br><br>
+{% for match in matches %}
+
+<div>
+    {{match | safe}}
+</div>
+
+
+{% endfor %}
+
+<script>
+    let id_list = [];
+    for (let i = 1; i < 100; i++) {
+        var row = document.getElementById(i.toString());
+        if (row) {
+            id_list.push(row.id);
+            row.style.display="none";
+            console.log(row)
+        }
+    }
+    console.log(id_list)
+    var current = 0
+    console.log(id_list[current])
+    const x = document.getElementById(id_list[current])
+    x.style.display="flex";
+    console.log(x)
+
+    
+    function dash() {
+        const y = document.getElementById(id_list[current])
+        console.log(y)
+        y.style.display="none";
+        current = current + 1
+        if (current == id_list.length) {
+            current = 0
+        }
+        document.getElementById(id_list[current]).style.display="flex"
+    }
+</script>
+
+{% endblock %}

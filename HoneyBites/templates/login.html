@@ -1,0 +1,31 @@
+{% extends "template.html" %}
+
+{% block style %}
+<style>
+    body, html {height: 100%}
+    body {
+    background-image: url("./static/assets/background.png");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 10%;
+    overflow: auto;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<div class="loginbox w3-card w3-container w3-black w3-round-large">
+<form class="w3-container" action="#" method="POST">
+    <h2 class="w3-margin-top w3-center">Log In</h2>
+    <p class="w3-text-white">Username: <input class="w3-input" type="text" name="Username"/></p>
+    <p class="w3-text-white">Password: <input class="w3-input" type="text" name="Password"/></p>
+    <p class="submitbutton w3-theme-d2"><input type="submit" value="Submit" class="w3-button w3-block w3-section"/></p>
+</form>
+</div>
+{% endblock %}
